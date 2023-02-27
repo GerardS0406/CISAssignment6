@@ -46,7 +46,7 @@ public abstract class Enemy : MonoBehaviour
 
     protected virtual void StartAttack()
     {
-        if (transform.position.x > 9 && attackRoutine == null && !GameManager.gameManager.gameOver)
+        if (transform.position.x > 8 && attackRoutine == null && !GameManager.gameManager.gameOver)
         {
             attackRoutine = StartCoroutine(Attack());
         }
